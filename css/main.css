@@ -1,0 +1,110 @@
+:root {
+	--strong-cyan: hsl(171, 66%, 44%);
+	--light-blue: hsl(233, 100%, 69%);
+	--dark-grayish-blue: hsl(210, 10%, 33%);
+	--grayish-blue: hsl(201, 11%, 66%);
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Bai Jamjuree', sans-serif;
+}
+/* Start Global Components */
+.container {
+	margin: auto;
+	display: flex;
+	/* flex-direction: column; */
+	width: 100%;
+}
+.content img {
+	margin-top: 100px;
+	height: 100px;
+}
+.content h1,
+.content h2 {
+	color: var(--dark-grayish-blue);
+	margin-top: 30px;
+}
+.content p {
+	color: var(--grayish-blue);
+	font-size: 15px;
+	line-height: 1.5;
+	width: 550px;
+	margin: auto;
+	max-width: 95%;
+}
+.container .buttons {
+	margin: 30px auto;
+	display: flex;
+	justify-content: space-around;
+	width: 350px;
+	max-width: 95%;
+}
+@media (max-width: 767px) {
+	.container .buttons {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+.buttons a {
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	padding: 10px 20px;
+	border-radius: 20px;
+	font-weight: 500;
+	transition: 0.3s;
+}
+.buttons a:first-child {
+	background-color: var(--strong-cyan);
+	border-bottom: 2px solid hsl(170.9, 66.8%, 36.7%);
+}
+@media (max-width: 767px) {
+	.buttons a:first-child {
+		margin-bottom: 10px;
+	}
+}
+.buttons a:first-child:hover {
+	background-color: hsl(171, 66%, 54%);
+	border-bottom: 2px solid hsl(171, 49%, 55%);
+}
+.buttons a:last-child {
+	background-color: var(--light-blue);
+	border-bottom: 2px solid hsl(233, 71%, 60%);
+}
+.buttons a:last-child:hover {
+	background-color: hsl(233, 100%, 79%);
+	border-bottom: 2px solid hsl(233, 70%, 70%);
+}
+/* End Global Components */
+.landing {
+	width: 100%;
+	background-image: url(../images/bg-header-desktop.png);
+	background-size: cover;
+	text-align: center;
+}
+.landing .container:nth-of-type(2) {
+	margin-top: 100px;
+}
+.track {
+	margin-top: 100px;
+	width: 100%;
+}
+.track .container {
+	width: 90%;
+	margin: auto;
+	flex-direction: row;
+	justify-content: space-around;
+}
+@media (max-width: 900px) {
+	.track .container {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+.track p {
+    width: 50%;
+}

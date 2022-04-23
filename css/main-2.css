@@ -1,0 +1,255 @@
+:root {
+	--strong-cyan: hsl(171, 66%, 44%);
+	--light-blue: hsl(233, 100%, 69%);
+	--dark-grayish-blue: hsl(210, 10%, 33%);
+	--grayish-blue: hsl(201, 11%, 66%);
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Bai Jamjuree', sans-serif;
+}
+ul {
+	list-style: none;
+}
+.container {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: center;
+}
+.container .content img.logo {
+	margin-top: 100px;
+	height: 100px;
+}
+.text h1,
+.text h2,
+.content h2 {
+	color: var(--dark-grayish-blue);
+	margin-top: 30px;
+}
+.text p,
+.content p {
+	color: var(--grayish-blue);
+	font-size: 15px;
+	line-height: 1.5;
+	width: 550px;
+	margin: auto;
+	max-width: 95%;
+}
+.container .buttons {
+	margin: 30px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	/* width: 350px; */
+	width: 85%;
+}
+@media (min-width: 768px) {
+	.container .buttons {
+		flex-direction: row;
+		justify-content: space-around;
+		width: 350px;
+	}
+}
+.buttons a {
+	margin: 0px;
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	padding: 10px 20px;
+	border-radius: 20px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	transition: 0.3s;
+}
+.buttons a:first-child {
+	background-color: var(--strong-cyan);
+	border-bottom: 2px solid hsl(170.9, 66.8%, 36.7%);
+}
+.buttons a:first-child:hover {
+	background-color: hsl(171, 66%, 54%);
+	border-bottom: 2px solid hsl(171, 49%, 55%);
+}
+.buttons a:last-child {
+	background-color: var(--light-blue);
+	border-bottom: 2px solid hsl(233, 71%, 60%);
+}
+.buttons a:last-child:hover {
+	background-color: hsl(233, 100%, 79%);
+	border-bottom: 2px solid hsl(233, 70%, 70%);
+}
+
+/* ########################### */
+/* Landing Section */
+.landing {
+	background-image: url(../images/bg-header-mobile.png);
+	background-size: cover;
+}
+@media (min-width: 768px) {
+	.landing {
+		background-image: url(../images/bg-header-desktop.png);
+	}
+}
+
+/* Track Section */
+.track {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.track .container .content {
+	margin-top: 30px;
+}
+@media (min-width: 768px) {
+	.track .container .content {
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media (min-width: 992px) {
+	.track .container .content {
+		display: flex;
+		flex-direction: row;
+	}
+}
+.track .container .content .image {
+	margin-top: 30px;
+	width: 100%;
+	flex-basis: 55%;
+	width: 100%;
+}
+.track .container .content .image img {
+	width: 95%;
+}
+.track .content .text {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+@media (min-width: 992px) {
+	.track .content .text {
+		text-align: left;
+	}
+}
+.track .text:nth-of-type(2) p {
+	max-width: 100%;
+	margin-top: 10px;
+}
+.track .text:nth-of-type(2) div {
+	margin-bottom: 50px;
+	width: 80%;
+}
+/* Start Acess */
+.access {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.access .images {
+	margin-top: 30px;
+}
+.access .images img {
+	width: 100%;
+}
+@media (min-width: 992px) {
+	.access .images img {
+		width: 70%;
+	}
+}
+/* Start Cahrge */
+.charge {
+	padding-bottom: 50px;
+}
+.charge .content {
+	margin-top: 40px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+@media (min-width: 768px) {
+	.charge .content {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+.charge .content div {
+	margin-top: 40px;
+	width: 50%;
+}
+@media (min-width: 768px) {
+	.charge .content div {
+		width: 30%;
+	}
+}
+.charge .content img {
+	margin-bottom: 10px;
+}
+.charge .content h2 {
+	margin-bottom: 20px;
+}
+/* Start Companies */
+.companies {
+	padding-bottom: 50px;
+}
+.companies .content {
+	display: flex;
+	flex-direction: column;
+}
+@media (min-width: 768px) {
+	.companies .content {
+		flex-direction: row;
+	}
+	.companies .content img {
+		width: 200px;
+	}
+}
+.companies .content img {
+	width: 100px;
+	margin: auto;
+	margin-top: 50px;
+}
+/* Start Final */
+.final {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+footer {
+	background-color: #eee;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+	footer .content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+footer .content > img {
+	height: 80px;
+}
+footer ul {
+	margin-top: 20px;
+}
+footer ul li {
+	margin-top: 20px;
+	color: var(--grayish-blue);
+}
+footer ul.icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer ul.icons li {
+	display: inline;
+	margin-left: 15px;
+}
