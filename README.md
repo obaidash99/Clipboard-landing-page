@@ -3,11 +3,11 @@
 ### This is a Solution for Clipboard landing page Challenge on frontendmentor.io
 
 ## Live Demo:
-  https://obaidash99.github.io/Clipboard-landing-page/
-  
+ https://obaidash99.github.io/Advice-generator-app/
+ 
 ## Challenge: 
-  https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9
+ https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db
   
 ## Features:
-  - Pure HTML & CSS.
-  - Full responsive design.
+  - HTML, CSS, JS and Fetch.
+  - Responsive design.
